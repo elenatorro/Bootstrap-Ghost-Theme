@@ -25,6 +25,12 @@ h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 800;
 }
+
+.intro-header .site-heading h1,
+.intro-header .page-heading h1 {
+  font-family: 'Give You Glory', sans-serif;
+}
+
 a {
   color: #404040;
 }
@@ -52,15 +58,14 @@ hr.small {
   left: 0;
   width: 100%;
   z-index: 3;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
 .navbar-custom .navbar-brand {
-  font-weight: 800;
+
 }
 .navbar-custom .nav li a {
   text-transform: uppercase;
   font-size: 12px;
-  font-weight: 800;
   letter-spacing: 1px;
 }
 @media only screen and (min-width: 768px) {
