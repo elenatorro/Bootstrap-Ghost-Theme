@@ -2,20 +2,18 @@
 
 #Simple and responsive theme for Ghost platform.
 
-It uses [Phoenix Framework](https://github.com/elenatorro/Phoenix-Framework)
-
 ##Download and install
 
 1. Clone the repo
 
 ```
-git clone https://github.com/elenatorro/Phoenix-Framework-Ghost-Theme.git
+git clone https://github.com/elenatorro/Bootstrap-Ghost-Theme.git
 ```
 
 
 (Ghost themes should be in the following path: yourblog/content/themes/yourtheme)
 
-Go to: content/themes/phoenixtheme
+Go to: content/themes/Bootstrap-Ghost-Theme
 
 2. Install the dependencies
 
