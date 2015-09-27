@@ -1,0 +1,17 @@
+{{!< default}}
+
+{{> "site-header"}}
+<main class="content" role="main">
+  <header class="tag-header container">
+    <h1 class="tag-title">tag: {{tag.name}}</h1>
+    {{#if tag.description}}
+      <h2 class="tag-description">
+        {{tag.description}}
+      </h2>
+    {{else}}
+      A {{pagination.total}} post collection
+    {{/if}}
+  </header>
+  {{! Includes the post loop - partials/loop.hbs }}
+  {{> "loop"}}
+</main>

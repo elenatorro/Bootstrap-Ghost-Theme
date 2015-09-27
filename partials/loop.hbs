@@ -1,0 +1,20 @@
+{{! The post loop }}
+<section class="container">
+	<section class="row">
+	{{#foreach posts}}
+		<article class="col-md-4">
+			<div class="panel panel-primary panel-post">
+				<header class="panel-heading">
+					<h3 class="panel-title"><a href="{{url}}">{{title}}</a></h3>
+				</header>
+			  	<div class="panel-body" style="background-image: url({{image}}">
+			    	{{"tags"}}
+			  	</div>
+			</div>
+		</article>
+	{{/foreach}}
+	</section>
+	<ul class="pagination">
+	 {{pagination}}
+	</ul>
+</section>

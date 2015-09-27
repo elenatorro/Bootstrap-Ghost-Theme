@@ -1,0 +1,24 @@
+{{!< default}}
+
+{{> "site-header"}}
+{{#post}}
+<section class="container">
+  <section class="row">
+    <section class="col-md-10">
+        <h2>{{title}}</h2>
+        <p><span class="glyphicon glyphicon-time"></span>  <time datetime="{{date format="YYYY-MM-DD"}}">{{date format='DD MMM YYYY'}}</time></p>
+        {{tags prefix="on " separator=" | "}}
+        <hr>
+        {{content}}
+        <hr>
+    </section>
+    <aside class="col-md-2">
+        <div class="well">
+            <h3>Author</h3>
+            <h4>{{author.name}}</h4>
+            <h4>{{author.bio}}</h4>
+        </div>
+    </aside>
+  </section>
+</section>
+{{/post}}

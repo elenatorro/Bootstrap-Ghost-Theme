@@ -1,0 +1,51 @@
+{{! The site header }}
+ <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="{{@blog.url}}">Main</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            {{navigation}}
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    {{#if post.image}}
+      <header class="intro-header" style="background-image: url('{{post.image}}')">
+    {{else}}
+      {{#if @blog.cover}}
+        <header class="intro-header" style="background-image: url('{{@blog.image}}')">
+      {{else}}
+        <header class="intro-header">
+      {{/if}}
+    {{/if}}
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="site-heading">
+                          {{#if @blog.logo}}
+                          <a href="{{@blog.url}}">
+                            <img src="{{@blog.logo}}" alt="Logo" class="img-responsive img-logo"/>
+                          </a>
+                        {{/if}}
+                        <h1>{{@blog.title}}</h1>
+                        <span class="subheading">{{@blog.description}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>

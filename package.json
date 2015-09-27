@@ -1,0 +1,21 @@
+{
+  "name": "BootstrapTheme",
+  "description": "Simple theme using Bootstrap",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "devDependencies": {
+    "gulp": "~3.9.0",
+    "gulp-sass": "~2.0.4",
+    "gulp-jshint": "~1.11.2",
+    "gulp-autoprefixer": "~3.0.1",
+    "gulp-notify": "~2.2.0",
+    "jshint-stylish": "~2.0.1"
+  },
+  "dependencies": {
+    "gulp-concat": "^2.6.0",
+    "wiredep": "^3.0.0-beta"
+  }
+}

@@ -1,0 +1,26 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,700,300);
+$font-family-base: 'Raleway', sans-serif;
+
+@import 'bootstrap';
+@import 'clean-blog';
+@import 'superhero';
+
+img {
+	width: 100%;
+}
+
+.img-logo {
+	width: 150px;
+	margin: 0 auto 0 auto;
+}
+
+.panel-post > .panel-body {
+	min-height: 300px;
+	-webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+	 background-position: fixed;
+	 background-attachment: center;
+	 background-origin: center;
+}
