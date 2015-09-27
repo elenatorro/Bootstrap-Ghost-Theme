@@ -11004,16 +11004,24 @@ a.list-group-item-danger.active:hover, a.list-group-item-danger.active:focus {
 img {
   width: 100%; }
 
+.tags > a {
+  background-color: #2C3E50 !important;
+  padding: 3px 10px;
+  margin: 3px;
+  border-radius: 10px; }
+
 .img-logo {
   width: 150px;
   margin: 0 auto 0 auto; }
 
-.panel-post > .panel-body {
-  min-height: 300px;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-position: fixed;
-  background-attachment: center;
-  background-origin: center; }
+.panel-post {
+  text-align: center; }
+  .panel-post > .panel-body {
+    min-height: 300px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: fixed;
+    background-attachment: center;
+    background-origin: center; }
