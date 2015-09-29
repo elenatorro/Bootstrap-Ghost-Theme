@@ -10836,7 +10836,7 @@ img {
   width: 100%; }
 
 .tags > a {
-  background-color: #2C3E50 !important;
+  background-color: white !important;
   padding: 3px 10px;
   margin: 3px;
   display: inline-block;
@@ -10848,13 +10848,19 @@ img {
   margin: 10px auto 10px auto; }
 
 .panel-post {
-  text-align: center; }
+  text-align: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: fixed;
+  background-attachment: center;
+  background-origin: center; }
+  .panel-post > .panel-heading {
+    opacity: 0.8;
+    height: 150px; }
+    .panel-post > .panel-heading > .panel-title {
+      margin-top: 20px;
+      font-size: 30px; }
   .panel-post > .panel-body {
-    min-height: 300px;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-position: fixed;
-    background-attachment: center;
-    background-origin: center; }
+    min-height: 150px; }
