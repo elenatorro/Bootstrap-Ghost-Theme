@@ -10839,6 +10839,8 @@ img {
   background-color: #2C3E50 !important;
   padding: 3px 10px;
   margin: 3px;
+  display: inline-block;
+  position: static;
   border-radius: 10px; }
 
 .img-logo {
