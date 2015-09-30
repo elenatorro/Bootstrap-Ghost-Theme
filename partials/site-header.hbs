@@ -33,19 +33,21 @@
         <header class="intro-header">
       {{/if}}
     {{/if}}
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <div class="site-heading">
+        <section class="container">
+            <section class="row">
+                <section class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <section class="site-heading">
                           {{#if @blog.logo}}
-                          <a href="{{@blog.url}}">
-                            <img src="{{@blog.logo}}" alt="Logo" class="img-responsive img-logo"/>
-                          </a>
+                          <div class="img-logo-container">
+                              <a href="{{@blog.url}}">
+                                <img src="{{@blog.logo}}" alt="Logo" class="img-responsive img-logo"/>
+                              </a>
+                            </div>
                         {{/if}}
                         <h1>{{@blog.title}}</h1>
                         <span class="subheading">{{@blog.description}}</span>
-                    </div>
-                </div>
-            </div>
-        </div>
+                    </section>
+                </section>
+            </section>
+        </section>
     </header>
