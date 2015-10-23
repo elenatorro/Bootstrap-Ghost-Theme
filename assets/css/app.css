@@ -10835,6 +10835,12 @@ button.close {
 img {
   width: 100%; }
 
+body {
+  font-size: 18px; }
+
+pre > code {
+  font-size: 18px; }
+
 .tags > a {
   background-color: white !important;
   padding: 3px 10px;
