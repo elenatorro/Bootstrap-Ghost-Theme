@@ -10,6 +10,11 @@ gulp.task('bootstrap', function() {
   .pipe(gulp.dest('./assets/scss'));
 });
 
+gulp.task('css', function() {
+  return gulp.src('./bower_components/prism/themes/prism.css')
+  .pipe(gulp.dest('./assets/css'));
+});
+
 gulp.task('styles', function() {
   gulp.src('./assets/scss/app.scss')
   .pipe(sass({
@@ -23,6 +28,7 @@ gulp.task('scripts', function () {
   return gulp.src([
     './bower_components/jquery/dist/jquery.js',
     './bower_components/bootstrap-sass/assets/javascripts/bootstrap.js',
+    './bower_components/prism/prism.js',
     './assets/js/clean-blog.js'
     ])
     .pipe(concat('app.js'))
@@ -41,7 +47,7 @@ gulp.task('fonts', function() {
   .pipe(gulp.dest('./assets/fonts'));
 });
 
-gulp.task('default', ['bootstrap', 'styles', 'scripts'], function() {
-  gulp.watch('./assets/scss/**/*.scss', ['bootstrap', 'styles']);
+gulp.task('default', ['bootstrap', 'css', 'styles', 'scripts'], function() {
+  gulp.watch('./assets/scss/**/*.scss', ['bootstrap','css', 'styles']);
   gulp.watch('./assets/js/**/*.js', ['scripts', 'jshint']);
 });
