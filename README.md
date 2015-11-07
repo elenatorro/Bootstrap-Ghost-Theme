@@ -2,6 +2,8 @@
 
 #Simple and responsive theme for Ghost platform.
 
+###See it in action [here](http://bordertopstyle.com)!
+
 ##Download and install
 
 1. Clone the repo
