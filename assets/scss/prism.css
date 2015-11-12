@@ -3,6 +3,9 @@
  * Based on dabblet (http://dabblet.com)
  * @author Lea Verou
  */
+ body {
+ 	background-color: blue;
+ }
 
 code[class*="language-"],
 pre[class*="language-"] {
