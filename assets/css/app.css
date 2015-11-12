@@ -147,11 +147,6 @@ table {
 td, th {
   padding: 0; }
 
-img.emoji {
-  width: 16px;
-  height: 16px;
-}
-
 /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
 @media print {
   *, *:before, *:after {
