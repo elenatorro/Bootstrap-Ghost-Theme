@@ -10891,3 +10891,7 @@ pre > code {
     background-origin: center; }
     .panel-post > .panel-body.panel-body-profile {
       min-height: 300px; }
+
+img.emoji {
+  width: 16px;
+  height: 16px; }
