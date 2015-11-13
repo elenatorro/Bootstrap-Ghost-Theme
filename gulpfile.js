@@ -29,7 +29,7 @@ gulp.task('scripts', function () {
     './bower_components/jquery/dist/jquery.js',
     './bower_components/bootstrap-sass/assets/javascripts/bootstrap.js',
     './bower_components/prism/prism.js',
-    './bower_components/twemoji/twemoji.js'
+    './assets/js/addCodeStyle.js'
     ])
     .pipe(concat('app.js'))
     .pipe(gulp.dest('./assets/js'))
