@@ -5376,6 +5376,7 @@ body {
  * Copyright 2012-2015 Thomas Park
  * Licensed under MIT
  * Based on Bootstrap
+ * 772953
 */
 /*!
  * Bootstrap v3.3.5 (http://getbootstrap.com)
@@ -10841,6 +10842,9 @@ body {
 pre > code {
   font-size: 18px; }
 
+.intro-header {
+  background-color: #bf3e11; }
+
 .tags > a {
   background-color: white !important;
   padding: 3px 10px;
@@ -10861,6 +10865,8 @@ pre > code {
 .img-logo {
   width: 100%;
   margin: 0 auto 0 auto; }
+  .img-logo:hover {
+    cursor: pointer; }
 
 .panel-post {
   text-align: center;
@@ -10870,13 +10876,21 @@ pre > code {
   background-size: cover;
   background-position: fixed;
   background-attachment: center;
-  background-origin: center; }
+  background-origin: center;
+  height: 300px; }
+  .panel-post.panel-primary {
+    border: none; }
   .panel-post > .panel-heading > .panel-title {
     margin: 10px;
     font-size: 30px; }
   .panel-post > .panel-heading.panel-heading-loop {
-    opacity: 0.8;
-    height: 150px; }
+    background-color: rgba(191, 62, 17, 0.8);
+    height: 300px;
+    transition: all 0.7s linear;
+    border: none; }
+    .panel-post > .panel-heading.panel-heading-loop:hover {
+      background-color: rgba(191, 62, 17, 0);
+      cursor: pointer; }
     .panel-post > .panel-heading.panel-heading-loop > .panel-title {
       margin-top: 20px;
       font-size: 30px; }
