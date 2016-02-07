@@ -37,7 +37,8 @@ a {
 }
 a:hover,
 a:focus {
-  color: #0085a1;
+  color: #808080;
+  text-decoration: none;
 }
 a img:hover,
 a img:focus {
@@ -61,9 +62,7 @@ hr.small {
   z-index: 3;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
-.navbar-custom .navbar-brand {
 
-}
 .navbar-custom .nav li a {
   text-transform: uppercase;
   font-size: 12px;

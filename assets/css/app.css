@@ -5051,7 +5051,8 @@ a {
   color: #404040; }
 
 a:hover, a:focus {
-  color: #0085a1; }
+  color: #808080;
+  text-decoration: none; }
 
 a img:hover, a img:focus {
   cursor: zoom-in; }
@@ -5423,7 +5424,11 @@ pre > code {
     border: none; }
   .panel-post > .panel-heading > .panel-title {
     margin: 10px;
-    font-size: 30px; }
+    font-size: 30px;
+    text-shadow: 0 0 5px black; }
+    .panel-post > .panel-heading > .panel-title:hover, .panel-post > .panel-heading > .panel-title:link, .panel-post > .panel-heading > .panel-title:visited, .panel-post > .panel-heading > .panel-title:active {
+      color: white;
+      text-decoration: none; }
   .panel-post > .panel-heading.panel-heading-loop {
     background-color: rgba(255, 255, 255, 0);
     height: 300px;
