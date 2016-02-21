@@ -4,8 +4,10 @@
  * Licensed under Apache 2.0 (https://github.com/IronSummitMedia/startbootstrap/blob/gh-pages/LICENSE)
  */
 
+@import url("https://fonts.googleapis.com/css?family=Lobster");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:400,700");
 body {
-  font-family: 'Lora', 'Times New Roman', serif;
+  font-family: 'Ubuntu', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 20px;
   color: #404040;
 }
@@ -16,19 +18,19 @@ p {
 p a {
   text-decoration: underline;
 }
-h1,
+
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Ubuntu', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 800;
 }
 
 .intro-header .site-heading h1,
 .intro-header .page-heading h1 {
-  font-family: 'Give You Glory', sans-serif;
+  font-family: 'Lobster', sans-serif;
 }
 
 a {
@@ -58,7 +60,7 @@ hr.small {
   left: 0;
   width: 100%;
   z-index: 3;
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
 }
 .navbar-custom .navbar-brand {
 
@@ -199,7 +201,6 @@ hr.small {
   font-weight: 600;
 }
 .intro-header .post-heading .meta {
-  font-family: 'Lora', 'Times New Roman', serif;
   font-style: italic;
   font-weight: 300;
   font-size: 20px;

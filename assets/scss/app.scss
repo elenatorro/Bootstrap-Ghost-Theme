@@ -1,9 +1,7 @@
-@import url(http://fonts.googleapis.com/css?family=Raleway:400,700,300);
-$font-family-base: 'Raleway', sans-serif;
+$font-family-base: 'Ubuntu', sans-serif;
 
 @import 'bootstrap';
 @import 'clean-blog';
-@import 'united';
 
 img {
 	width: 100%;
@@ -11,14 +9,25 @@ img {
 
 body {
 	font-size: 18px;
+	font-family: $font-family-base;
+}
+
+#page-body {
+	font-family: $font-family-base;
 }
 
 pre > code {
 	font-size: 18px;
 }
 
+.site-heading > h1 {
+	font-family: 'Lobster', sans-serif;
+	text-shadow: 
+	  0 0 5px black;
+}
+
 .intro-header {
-	background-color: rgb(191, 62, 17);
+	background-color: #203C49;
 }
 
 .tags > a {
@@ -71,18 +80,21 @@ pre > code {
 		}
 
 	&.panel-heading-loop {
-		background-color: rgba(191, 62, 17,0.8);
+		background-color: rgba(255, 255, 255,0);
 		height: 300px;
 		transition: all 0.7s linear;
 		border: none;
 		&:hover {
-			background-color: rgba(191, 62, 17,0);
-			cursor: pointer;
+			background-color: rgba(0, 0, 0,0.8);
 		}
 
 		> .panel-title {
 			margin-top: 20px;
 			font-size: 30px;
+		}
+
+		> a:hover, a:focus {
+			text-decoration: none;
 		}
 	}
 
