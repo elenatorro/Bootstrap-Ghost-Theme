@@ -22,8 +22,7 @@ pre > code {
 
 .site-heading > h1 {
 	font-family: 'Lobster', sans-serif;
-	text-shadow: 
-	  0 0 5px black;
+	text-shadow: 0 0 5px black;
 }
 
 .intro-header {
@@ -77,6 +76,12 @@ pre > code {
 		> .panel-title {
 			margin: 10px;
 			font-size: 30px;
+			text-shadow: 0 0 5px black;
+
+			&:hover, &:link, &:visited, &:active  {
+				color: white;
+				text-decoration: none;
+			}
 		}
 
 	&.panel-heading-loop {
