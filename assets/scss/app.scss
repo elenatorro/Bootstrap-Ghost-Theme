@@ -1,4 +1,5 @@
 $font-family-base: 'Ubuntu', sans-serif;
+$main-color: #203C49;
 
 @import 'bootstrap';
 @import 'clean-blog';
@@ -26,7 +27,7 @@ pre > code {
 }
 
 .intro-header {
-	background-color: #203C49;
+	background-color: $main-color;
 }
 
 .tags > a {
@@ -121,6 +122,15 @@ pre > code {
 		background-origin: center;
 	}
 
+}
+
+#text-content {
+	a {
+	color: white;
+	background-color: $main-color;
+	padding: 3px;
+	border-radius: 3px;
+}
 }
 
 img.emoji {
