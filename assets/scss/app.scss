@@ -2,6 +2,7 @@ $font-family-base: 'Ubuntu', sans-serif;
 
 @import 'bootstrap';
 @import 'clean-blog';
+@import 'variables';
 
 img {
 	width: 100%;
@@ -26,7 +27,7 @@ pre > code {
 }
 
 .intro-header {
-	background-color: #203C49;
+	background-color: $main-color;
 }
 
 .tags > a {
@@ -77,9 +78,9 @@ pre > code {
 			margin: 10px;
 			font-size: 30px;
 			text-shadow: 0 0 5px black;
+			color: white;
 
 			&:hover, &:link, &:visited, &:active  {
-				color: white;
 				text-decoration: none;
 			}
 		}
@@ -89,9 +90,6 @@ pre > code {
 		height: 300px;
 		transition: all 0.7s linear;
 		border: none;
-		&:hover {
-			background-color: rgba(0, 0, 0,0.8);
-		}
 
 		> .panel-title {
 			margin-top: 20px;

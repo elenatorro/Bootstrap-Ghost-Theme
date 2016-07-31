@@ -1,27 +1,25 @@
-var gulp     = require('gulp');
-var sass     = require('gulp-sass'),
+var gulp = require('gulp'),
+  sass = require('gulp-sass'),
   autoprefix = require('gulp-autoprefixer'),
-  jshint     = require('gulp-jshint'),
-  stylish    = require('jshint-stylish'),
-  concat     = require('gulp-concat');
+  jshint = require('gulp-jshint'),
+  stylish = require('jshint-stylish'),
+  concat = require('gulp-concat');
 
-gulp.task('bootstrap', function() {
+gulp.task('bootstrap', function () {
   return gulp.src('./bower_components/bootstrap-sass/assets/stylesheets/**/*')
-  .pipe(gulp.dest('./assets/scss'));
+    .pipe(gulp.dest('./assets/scss'));
 });
 
-gulp.task('css', function() {
+gulp.task('css', function () {
   return gulp.src('./bower_components/prism/themes/prism.css')
-  .pipe(gulp.dest('./assets/css'));
+    .pipe(gulp.dest('./assets/css'));
 });
 
-gulp.task('styles', function() {
+gulp.task('styles', function () {
   gulp.src('./assets/scss/app.scss')
-  .pipe(sass({
-             style: 'compressed'
-         }))
-  .pipe(concat('app.css'))
-  .pipe(gulp.dest('./assets/css'))
+    .pipe(sass({  style: 'compressed'  }))
+    .pipe(concat('app.css'))
+    .pipe(gulp.dest('./assets/css'))
 });
 
 gulp.task('scripts', function () {
@@ -42,12 +40,12 @@ gulp.task('jshint', function () {
 });
 
 
-gulp.task('fonts', function() {
+gulp.task('fonts', function () {
   return gulp.src('./bower_components/bootstrap-sass/assets/fonts/**/*')
-  .pipe(gulp.dest('./assets/fonts'));
+    .pipe(gulp.dest('./assets/fonts'));
 });
 
-gulp.task('default', ['bootstrap', 'css', 'styles', 'scripts'], function() {
-  gulp.watch('./assets/scss/**/*.scss', ['bootstrap','css', 'styles']);
+gulp.task('default', ['bootstrap', 'css', 'styles', 'scripts'], function () {
+  gulp.watch('./assets/scss/**/*.scss', ['bootstrap', 'css', 'styles']);
   gulp.watch('./assets/js/**/*.js', ['scripts', 'jshint']);
 });
